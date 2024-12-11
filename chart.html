@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="assets/js/main.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+</head>
+<body class="home-page chart-page">
+  <section class="dashboard-container">
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-content">
+        <div class="sidebar-header">
+          <div class="sidebar-brand">
+            <img src="assets/images/HRHR.svg" alt="" class="sidebar-logo" />
+            <span class="menu-toggle" id="menu_toggle" aria-label="Toggle menu">
+              <img src="assets/images/toggler.svg" alt="" />
+            </span>
+          </div>
+        </div>
+        
+        <div class="nav-menu">
+          <a href="#" class="nav-item" role="menuitem">
+            <div class="nav-item-content">
+              <img src="assets/images/dashboard.svg" alt="" class="nav-icon" />
+              <span>Dashboard</span>
+            </div>
+          </a>
+          
+          <a href="#" class="nav-item" role="menuitem">
+            <div class="nav-item-content">
+              <img src="assets/images/calendar.svg" alt="" class="nav-icon" />
+              <span>Calendar</span>
+            </div>
+          </a>
+          
+          <a href="#" class="nav-item" role="menuitem">
+            <div class="nav-item-content">
+              <img src="assets/images/recruiter.svg" alt="" class="nav-icon" />
+              <span>Recruitment</span>
+              <span class="nav-icon-badge">10</span>
+            </div>
+          </a>
+          
+          <a href="#" class="nav-item" role="menuitem">
+            <div class="nav-item-content">
+              <img src="assets/images/employee.svg" alt="" class="nav-icon" />
+              <span>Employees</span>
+            </div>
+          </a>
+          
+          <a href="#" class="nav-item active" role="menuitem">
+            <div class="nav-item-content">
+              <img src="assets/images/clock.svg" alt="" class="nav-icon" />
+              <span>Leave</span>
+            </div>
+          </a>
+          
+          <a href="#" class="nav-item" role="menuitem">
+            <div class="nav-item-content">
+              <img src="assets/images/data.svg" alt="" class="nav-icon" />
+              <span>Organisation</span>
+            </div>
+          </a>
+          
+          <a href="#" class="nav-item" role="menuitem">
+            <div class="nav-item-content">
+              <img src="assets/images/dollar-circle.svg" alt="" class="nav-icon" />
+              <span>Billings</span>
+            </div>
+          </a>
+          
+          <a href="#" class="nav-item" role="menuitem">
+            <div class="nav-item-content">
+              <img src="assets/images/message-question.svg" alt="" class="nav-icon" />
+              <span>Engagement</span>
+            </div>
+          </a>
+          
+          <a href="#" class="nav-item" role="menuitem">
+            <div class="nav-item-content">
+              <img src="assets/images/monitor.svg" alt="" class="nav-icon" />
+              <span>Development</span>
+            </div>
+          </a>
+          
+          <a href="#" class="nav-item" role="menuitem">
+            <div class="nav-item-content">
+              <img src="assets/images/medal-star.svg" alt="" class="nav-icon" />
+              <span>Performance</span>
+            </div>
+          </a>
+          
+          <a href="#" class="nav-item" role="menuitem">
+            <div class="nav-item-content">
+              <img src="assets/images/chart.svg" alt="" class="nav-icon" />
+              <span>Reports</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </aside>
+    <main class="main-container">
+        <header class="top-header">
+          <div class="header-content">
+            <div class="brand">
+              <img src="assets/images/menumiz.svg" alt="Menumiz HR Logo" class="brand-logo" />
+            </div>
+            <div class="toolbar">
+              <div class="search-bar">
+                <div class="search-input-wrapper">
+                  <img src="assets/images/magnifier.svg" alt="" class="search-icon" />
+                  <label for="search" class="visually-hidden">Search</label>
+                  <input type="text" id="search" placeholder="Enter any keyword..." aria-label="Search" />
+                </div>
+              </div>
+              <div class="notification-icon" id="notification_icon">
+                <img src="assets/images/notification.svg" alt="Notifications" />
+              </div>
+              <img src="assets/images/setting.svg" alt="Settings" />
+              <div class="user-profile">
+                <img src="assets/images/avatar.svg"  alt="User avatar" class="avatar" />
+              </div>
+            </div>
+          </div>
+
+          <article class="notifications-container" id="notifications_container">
+            <div class="header-wrapper">
+              <h1 class="page-heading">Notifications</h1>
+              <div class="action-wrapper" tabindex="0" role="button">
+                <span class="action-text">Mark all as read</span>
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/a8125b77a033056a86abe51857a6c7dff48dcb521a4271548d7deb055ec3bcef?placeholderIfAbsent=true&apiKey=cf0ece7472d84e2e9b187e8ddb1a6675" class="action-icon" alt="" />
+              </div>
+            </div>
+            <div class="notifications-list">
+              <div class="notification-item">
+                <div class="avatar-wrapper">
+                  <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/aa83934ec656452dc83f9b487835adb3cf120a9d022a3e6891102b77ef585f7a?placeholderIfAbsent=true&apiKey=cf0ece7472d84e2e9b187e8ddb1a6675" class="avatar" alt="Mark Jacobs profile picture" />
+                </div>
+                <div class="notification-content">
+                  <div class="notification-text">
+                    <span class="bold-text">Mark Jacobs</span>
+                    <span class="regular-text">has applied for leave and is currently awaiting approval.</span>
+                  </div>
+                  <div class="timestamp">Today at 09:42 AM</div>
+                </div>
+              </div>
+              <div class="notification-item">
+                <div class="avatar-wrapper">
+                  <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/0194198d5eeda0858955b133d43bb2ba5bba52b6bdfc7cd9840439bd89db331f?placeholderIfAbsent=true&apiKey=cf0ece7472d84e2e9b187e8ddb1a6675" class="avatar" alt="Charlie Kristen profile picture" />
+                </div>
+                <div class="notification-content">
+                  <div class="notification-text">
+                    <span class="bold-text">Charlie Kristen</span>
+                    <span class="regular-text">has applied for leave and is currently awaiting approval.</span>
+                  </div>
+                  <div class="timestamp">Today at 08:23 AM</div>
+                </div>
+              </div>
+              <div class="notification-item">
+                <div class="avatar-wrapper">
+                  <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/43cca103b0b0871ae00e33deace793ba8543b002ec3adcb0b40421d9a9af03a9?placeholderIfAbsent=true&apiKey=cf0ece7472d84e2e9b187e8ddb1a6675" class="avatar" alt="Nur Fariha binti Maslan profile picture" />
+                </div>
+                <div class="notification-content">
+                  <div class="notification-text">
+                    <span class="bold-text">Nur Fariha binti Maslan</span>
+                    <span class="regular-text">has applied for leave and is currently awaiting approval.</span>
+                  </div>
+                  <div class="timestamp">Yesterday at 17:30 PM</div>
+                </div>
+              </div>
+              <div class="notification-item">
+                <div class="avatar-wrapper">
+                  <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/931e85f00e4d0a7679ac21197d6f088fdb3f49509519be62ed14d07e5e804ea9?placeholderIfAbsent=true&apiKey=cf0ece7472d84e2e9b187e8ddb1a6675" class="avatar" alt="Nur Fariha binti Maslan profile picture" />
+                </div>
+                <div class="notification-content">
+                  <div class="notification-text-read">
+                    <span class="gray-text">Nur Fariha binti Maslan</span>
+                    <span class="gray-text">has applied for leave and is currently awaiting approval.</span>
+                  </div>
+                  <div class="timestamp">Yesterday at 14:45 PM</div>
+                </div>
+              </div>
+              <div class="notification-item">
+                <div class="avatar-wrapper">
+                  <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/93731317394772011ce62f505dd08fa069476945621ce787f50f61d9a3567009?placeholderIfAbsent=true&apiKey=cf0ece7472d84e2e9b187e8ddb1a6675" class="avatar" alt="Nishant Talwar profile picture" />
+                </div>
+                <div class="notification-content">
+                  <div class="notification-text-read">
+                    <span class="gray-text">Nishant Talwar</span>
+                    <span class="gray-text">has applied for leave and is currently awaiting approval.</span>
+                  </div>
+                  <div class="timestamp">Yesterday at 14:42 PM</div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </header>
+        <section class="main-content">
+          <nav class="sub-nav">
+            <div class="sub-nav-items">
+              <a href="#" class="sub-nav-item active">Leave Management</a>
+              <a href="#" class="sub-nav-item">Leave Requests</a>
+              <a href="#" class="sub-nav-item">Leave Types</a>
+              <a href="#" class="sub-nav-item">Leave Calendar</a>
+              <a href="#" class="sub-nav-item">Leave Report</a>
+              <a href="#" class="sub-nav-item">Leave Approver</a>
+            </div>
+          </nav>
+          <section class="content-wrapper">
+            <div class="content-header">
+              <h1 class="page-title">Leave Requests</h1>
+              <div class="view-toggle">
+                <button class="toggle-button active">List View</button>
+                <button class="toggle-button">Month View</button>
+              </div>
+            </div>
+        
+            <div class="leave-table">
+              <div class="table-actions">
+                <section class="table-tabs">
+                  <ul>
+                    <li class="active">All</li>
+                    <li>Approved</li>
+                    <li>Rejected</li>
+                  </ul>
+                </section>
+                <section class="table-calendar">
+                  <img src="assets/images/arrow-left.svg" alt="">
+                  <h5>March <b>2023</b></h5>
+                  <span id="datepicker-trigger">
+                    <input type="hidden" id="datepicker">
+                    <img src="assets/images/date-picker.svg" alt="" >
+                    <img src="assets/images/arrow-down.svg" alt="">
+                  </span>
+                  <img src="assets/images/arrow-right.svg" class="arrow-right" alt="">
+                </section>
+              </div>
+
+            
+              <div class="leave-cards">
+                <div class="leave-card">
+                  <div class="card-content">
+                    <div class="card-header">
+                      <div class="user-info">
+                        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/d1a50a0c1313d01b3e28c4d860e92f564ac15a85a57a269c08f966b32f420abb?placeholderIfAbsent=true&apiKey=cf0ece7472d84e2e9b187e8ddb1a6675" alt="Mark Jacobs profile photo" class="user-avatar" />
+                        <div>Mark Jacobs</div>
+                      </div>
+                      <div class="action-buttons">
+                        <button class="btn btn-outline">REJECT</button>
+                        <button class="btn btn-primary">APPROVE</button>
+                      </div>
+                    </div>
+                    
+                    <div class="leave-details">
+                      <div class="detail-group">
+                        <div class="detail-item">
+                          <div class="detail-label">start date</div>
+                          <div class="detail-value">31 Mar, 2023 09:00 AM</div>
+                        </div>
+                        <div class="detail-item">
+                          <div class="detail-label">end date</div>
+                          <div class="detail-value">31 Mar, 2023 18:00 PM</div>
+                        </div>
+                      </div>
+                      <div class="detail-group">
+                        <div class="detail-item">
+                          <div class="detail-label">day(s)</div>
+                          <div class="detail-value">1.0</div>
+                        </div>
+                        <div class="detail-item">
+                          <div class="detail-label">leave type</div>
+                          <div class="detail-value">Annual Leave</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          
+                <div class="leave-card">
+                  <div class="card-content">
+                    <div class="card-header">
+                      <div class="user-info">
+                        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/6bd1ffb2429305cbfdc274af0c5b3b5c84311abaa4f111921be5a5bbe074a083?placeholderIfAbsent=true&apiKey=cf0ece7472d84e2e9b187e8ddb1a6675" alt="Charlie Kristen profile photo" class="user-avatar" />
+                        <div>Charlie Kristen</div>
+                      </div>
+                      <div class="action-buttons">
+                        <button class="btn btn-outline">REJECT</button>
+                        <button class="btn btn-primary">APPROVE</button>
+                      </div>
+                    </div>
+                    
+                    <div class="leave-details">
+                      <div class="detail-group">
+                        <div class="detail-item">
+                          <div class="detail-label">start date</div>
+                          <div class="detail-value">10 Apr, 2023 09:00 AM</div>
+                        </div>
+                        <div class="detail-item">
+                          <div class="detail-label">end date</div>
+                          <div class="detail-value">11 Apr, 2023 18:00 PM</div>
+                        </div>
+                      </div>
+                      <div class="detail-group">
+                        <div class="detail-item">
+                          <div class="detail-label">day(s)</div>
+                          <div class="detail-value">2.0</div>
+                        </div>
+                        <div class="detail-item">
+                          <div class="detail-label">leave type</div>
+                          <div class="detail-value">Annual Leave</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          
+                <div class="leave-card">
+                  <div class="card-content">
+                    <div class="card-header">
+                      <div class="user-info">
+                        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/be660d10fbd59c228eff7f0b5b84f0ded4a9514ad2ce95839834057b0d173165?placeholderIfAbsent=true&apiKey=cf0ece7472d84e2e9b187e8ddb1a6675" alt="Nur Fariha profile photo" class="user-avatar" />
+                        <div>Nur Fariha binti Maslan</div>
+                      </div>
+                      <div class="action-buttons">
+                        <button class="btn btn-outline">REJECT</button>
+                        <button class="btn btn-primary">APPROVE</button>
+                      </div>
+                    </div>
+                    
+                    <div class="leave-details">
+                      <div class="detail-group">
+                        <div class="detail-item">
+                          <div class="detail-label">start date</div>
+                          <div class="detail-value">21 Apr, 2023 09:00 AM</div>
+                        </div>
+                        <div class="detail-item">
+                          <div class="detail-label">end date</div>
+                          <div class="detail-value">24 Apr, 2023 18:00 PM</div>
+                        </div>
+                      </div>
+                      <div class="detail-group">
+                        <div class="detail-item">
+                          <div class="detail-label">day(s)</div>
+                          <div class="detail-value">2.0</div>
+                        </div>
+                        <div class="detail-item">
+                          <div class="detail-label">leave type</div>
+                          <div class="detail-value">Hospital Leave</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          
+                <div class="leave-card">
+                  <div class="card-content">
+                    <div class="card-header">
+                      <div class="user-info">
+                        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/6732858f32487274756edfd0588bf8f331e9d3189987e991d0f97921ea14fc76?placeholderIfAbsent=true&apiKey=cf0ece7472d84e2e9b187e8ddb1a6675" alt="Nishant Talwar profile photo" class="user-avatar" />
+                        <div>Nishant Talwar</div>
+                      </div>
+                      <div class="action-buttons">
+                        <button class="btn btn-primary">APPROVED</button>
+                      </div>
+                    </div>
+                    
+                    <div class="leave-details">
+                      <div class="detail-group">
+                        <div class="detail-item">
+                          <div class="detail-label">start date</div>
+                          <div class="detail-value">27 Feb, 2023 14:00 PM</div>
+                        </div>
+                        <div class="detail-item">
+                          <div class="detail-label">end date</div>
+                          <div class="detail-value">28 Feb, 2023 18:00 PM</div>
+                        </div>
+                      </div>
+                      <div class="detail-group">
+                        <div class="detail-item">
+                          <div class="detail-label">day(s)</div>
+                          <div class="detail-value">1.5</div>
+                        </div>
+                        <div class="detail-item">
+                          <div class="detail-label">leave type</div>
+                          <div class="detail-value">Sick Leave</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          
+                <div class="leave-card">
+                  <div class="card-content">
+                    <div class="card-header">
+                      <div class="user-info">
+                        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/86119518754afc786d052c0354bdafa2bb69bdaebf4f9cbd0ebeb822de685274?placeholderIfAbsent=true&apiKey=cf0ece7472d84e2e9b187e8ddb1a6675" alt="Simon Minter profile photo" class="user-avatar" />
+                        <div>Simon Minter</div>
+                      </div>
+                      <div class="action-buttons">
+                        <button class="btn btn-primary">APPROVED</button>
+                      </div>
+                    </div>
+                    
+                    <div class="leave-details">
+                      <div class="detail-group">
+                        <div class="detail-item">
+                          <div class="detail-label">start date</div>
+                          <div class="detail-value">22 Feb, 2023 09:00 AM</div>
+                        </div>
+                        <div class="detail-item">
+                          <div class="detail-label">end date</div>
+                          <div class="detail-value">31 Mar, 2023 09:00 AM</div>
+                        </div>
+                      </div>
+                      <div class="detail-group">
+                        <div class="detail-item">
+                          <div class="detail-label">day(s)</div>
+                          <div class="detail-value">0.5</div>
+                        </div>
+                        <div class="detail-item">
+                          <div class="detail-label">leave type</div>
+                          <div class="detail-value">Sick Leave</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+             
+
+            </div>
+            </section>
+        </section>
+    </main>
+  </section>
+ 
+</body>
+</html>

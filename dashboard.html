@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="assets/js/main.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</head>
+<body class="home-page">
+  <section class="dashboard-container">
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-content">
+        <div class="sidebar-header">
+          <div class="sidebar-brand">
+            <img src="assets/images/HRHR.svg" alt="" class="sidebar-logo" />
+            <span class="menu-toggle" id="menu_toggle" aria-label="Toggle menu">
+              <img src="assets/images/toggler.svg" alt="" />
+            </span>
+          </div>
+        </div>
+        
+        <div class="nav-menu">
+          <a href="#" class="nav-item" role="menuitem">
+            <div class="nav-item-content">
+              <img src="assets/images/dashboard.svg" alt="" class="nav-icon" />
+              <span>Dashboard</span>
+            </div>
+          </a>
+          
+          <a href="#" class="nav-item" role="menuitem">
+            <div class="nav-item-content">
+              <img src="assets/images/calendar.svg" alt="" class="nav-icon" />
+              <span>Calendar</span>
+            </div>
+          </a>
+          
+          <a href="#" class="nav-item" role="menuitem">
+            <div class="nav-item-content">
+              <img src="assets/images/recruiter.svg" alt="" class="nav-icon" />
+              <span>Recruitment</span>
+              <span class="nav-icon-badge">10</span>
+            </div>
+          </a>
+          
+          <a href="#" class="nav-item" role="menuitem">
+            <div class="nav-item-content">
+              <img src="assets/images/employee.svg" alt="" class="nav-icon" />
+              <span>Employees</span>
+            </div>
+          </a>
+          
+          <a href="#" class="nav-item active" role="menuitem">
+            <div class="nav-item-content">
+              <img src="assets/images/clock.svg" alt="" class="nav-icon" />
+              <span>Leave</span>
+            </div>
+          </a>
+          
+          <a href="#" class="nav-item" role="menuitem">
+            <div class="nav-item-content">
+              <img src="assets/images/data.svg" alt="" class="nav-icon" />
+              <span>Organisation</span>
+            </div>
+          </a>
+          
+          <a href="#" class="nav-item" role="menuitem">
+            <div class="nav-item-content">
+              <img src="assets/images/dollar-circle.svg" alt="" class="nav-icon" />
+              <span>Billings</span>
+            </div>
+          </a>
+          
+          <a href="#" class="nav-item" role="menuitem">
+            <div class="nav-item-content">
+              <img src="assets/images/message-question.svg" alt="" class="nav-icon" />
+              <span>Engagement</span>
+            </div>
+          </a>
+          
+          <a href="#" class="nav-item" role="menuitem">
+            <div class="nav-item-content">
+              <img src="assets/images/monitor.svg" alt="" class="nav-icon" />
+              <span>Development</span>
+            </div>
+          </a>
+          
+          <a href="#" class="nav-item" role="menuitem">
+            <div class="nav-item-content">
+              <img src="assets/images/medal-star.svg" alt="" class="nav-icon" />
+              <span>Performance</span>
+            </div>
+          </a>
+          
+          <a href="#" class="nav-item" role="menuitem">
+            <div class="nav-item-content">
+              <img src="assets/images/chart.svg" alt="" class="nav-icon" />
+              <span>Reports</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </aside>
+    <main class="main-container">
+        <header class="top-header">
+          <div class="header-content">
+            <div class="brand">
+              <img src="assets/images/menumiz.svg" alt="Menumiz HR Logo" class="brand-logo" />
+            </div>
+            <div class="toolbar">
+              <div class="search-bar">
+                <div class="search-input-wrapper">
+                  <img src="assets/images/magnifier.svg" alt="" class="search-icon" />
+                  <label for="search" class="visually-hidden">Search</label>
+                  <input type="text" id="search" placeholder="Enter any keyword..." aria-label="Search" />
+                </div>
+              </div>
+              <div class="notification-icon" id="notification_icon">
+                <img src="assets/images/notification.svg" alt="Notifications" />
+              </div>
+              <img src="assets/images/setting.svg" alt="Settings" />
+              <div class="user-profile">
+                <img src="assets/images/avatar.svg"  alt="User avatar" class="avatar" />
+              </div>
+            </div>
+          </div>
+
+          <article class="notifications-container" id="notifications_container">
+            <div class="header-wrapper">
+              <h1 class="page-heading">Notifications</h1>
+              <div class="action-wrapper" tabindex="0" role="button">
+                <span class="action-text">Mark all as read</span>
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/a8125b77a033056a86abe51857a6c7dff48dcb521a4271548d7deb055ec3bcef?placeholderIfAbsent=true&apiKey=cf0ece7472d84e2e9b187e8ddb1a6675" class="action-icon" alt="" />
+              </div>
+            </div>
+            <div class="notifications-list">
+              <div class="notification-item">
+                <div class="avatar-wrapper">
+                  <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/aa83934ec656452dc83f9b487835adb3cf120a9d022a3e6891102b77ef585f7a?placeholderIfAbsent=true&apiKey=cf0ece7472d84e2e9b187e8ddb1a6675" class="avatar" alt="Mark Jacobs profile picture" />
+                </div>
+                <div class="notification-content">
+                  <div class="notification-text">
+                    <span class="bold-text">Mark Jacobs</span>
+                    <span class="regular-text">has applied for leave and is currently awaiting approval.</span>
+                  </div>
+                  <div class="timestamp">Today at 09:42 AM</div>
+                </div>
+              </div>
+              <div class="notification-item">
+                <div class="avatar-wrapper">
+                  <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/0194198d5eeda0858955b133d43bb2ba5bba52b6bdfc7cd9840439bd89db331f?placeholderIfAbsent=true&apiKey=cf0ece7472d84e2e9b187e8ddb1a6675" class="avatar" alt="Charlie Kristen profile picture" />
+                </div>
+                <div class="notification-content">
+                  <div class="notification-text">
+                    <span class="bold-text">Charlie Kristen</span>
+                    <span class="regular-text">has applied for leave and is currently awaiting approval.</span>
+                  </div>
+                  <div class="timestamp">Today at 08:23 AM</div>
+                </div>
+              </div>
+              <div class="notification-item">
+                <div class="avatar-wrapper">
+                  <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/43cca103b0b0871ae00e33deace793ba8543b002ec3adcb0b40421d9a9af03a9?placeholderIfAbsent=true&apiKey=cf0ece7472d84e2e9b187e8ddb1a6675" class="avatar" alt="Nur Fariha binti Maslan profile picture" />
+                </div>
+                <div class="notification-content">
+                  <div class="notification-text">
+                    <span class="bold-text">Nur Fariha binti Maslan</span>
+                    <span class="regular-text">has applied for leave and is currently awaiting approval.</span>
+                  </div>
+                  <div class="timestamp">Yesterday at 17:30 PM</div>
+                </div>
+              </div>
+              <div class="notification-item">
+                <div class="avatar-wrapper">
+                  <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/931e85f00e4d0a7679ac21197d6f088fdb3f49509519be62ed14d07e5e804ea9?placeholderIfAbsent=true&apiKey=cf0ece7472d84e2e9b187e8ddb1a6675" class="avatar" alt="Nur Fariha binti Maslan profile picture" />
+                </div>
+                <div class="notification-content">
+                  <div class="notification-text-read">
+                    <span class="gray-text">Nur Fariha binti Maslan</span>
+                    <span class="gray-text">has applied for leave and is currently awaiting approval.</span>
+                  </div>
+                  <div class="timestamp">Yesterday at 14:45 PM</div>
+                </div>
+              </div>
+              <div class="notification-item">
+                <div class="avatar-wrapper">
+                  <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/93731317394772011ce62f505dd08fa069476945621ce787f50f61d9a3567009?placeholderIfAbsent=true&apiKey=cf0ece7472d84e2e9b187e8ddb1a6675" class="avatar" alt="Nishant Talwar profile picture" />
+                </div>
+                <div class="notification-content">
+                  <div class="notification-text-read">
+                    <span class="gray-text">Nishant Talwar</span>
+                    <span class="gray-text">has applied for leave and is currently awaiting approval.</span>
+                  </div>
+                  <div class="timestamp">Yesterday at 14:42 PM</div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </header>
+        <section class="main-content">
+          <nav class="sub-nav">
+            <div class="sub-nav-items">
+              <a href="#" class="sub-nav-item active">Leave Management</a>
+              <a href="#" class="sub-nav-item">Leave Requests</a>
+              <a href="#" class="sub-nav-item">Leave Types</a>
+              <a href="#" class="sub-nav-item">Leave Calendar</a>
+              <a href="#" class="sub-nav-item">Leave Report</a>
+              <a href="#" class="sub-nav-item">Leave Approver</a>
+            </div>
+          </nav>
+
+            <div class="dashboard-header">
+              <h1 class="dashboard-title">Dashboard</h1>
+              <article class="dashboards">
+
+                <section class="dashboard">
+                  <div class="heatmap-container">
+                    <div class="header-section">
+                      <h2 class="title">Heatmap</h2>
+                      <div class="filter-group">
+                        <div class="filter-item">
+                          <select class="single-select-3" name="state">
+                            <option value="SD">SICKDAY</option>
+                            <option value="SD1">SICKDAY1</option>
+                          </select>
+                        </div>
+                        <div class="filter-item">
+                          <span>March 2023</span>
+                          <img src="assets/images/arrow-down.svg" alt="" class="filter-icon" loading="lazy" />
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="weekday-grid">
+                      <div class="weekday-container">
+                        <div class="weekday weekday-first">Mon</div>
+                        <div class="weekday">Tue</div>
+                        <div class="weekday">Wed</div>
+                        <div class="weekday">Thu</div>
+                        <div class="weekday weekday-highlight">Fri</div>
+                        <div class="weekday">Sat</div>
+                        <div class="weekday weekday-last">Sun</div>
+                      </div>
+                    </div>
+                    
+                    <div class="metrics-section">
+                      <div class="metric-card">
+                        <span>Sick Leave</span>
+                        <img src="assets/images/50percent.svg" alt="Sick leave statistics chart" class="metric-chart" loading="lazy" />
+                      </div>
+                      <div class="metric-card">
+                        <span>Annual Leave</span>
+                        <img src="assets/images/30percent.svg" alt="Annual leave statistics chart" class="metric-chart" loading="lazy" />
+                      </div>
+                      <div class="metric-card">
+                        <span>Annual Leave</span>
+                        <img src="assets/images/20percent.svg" alt="Annual leave statistics chart" class="metric-chart" loading="lazy" />
+                      </div>
+                    </div>
+                    
+                    <div class="footer-text">Most popular day: Friday</div>
+                  </div>
+                </section>
+               
+                <section class="dashboard">
+                  <div class="heatmap-container">
+                    <div class="header-section">
+                      <h2 class="title">Heatmap</h2>
+                      <div class="filter-group">
+                        <div class="filter-item">
+                          <select class="single-select-1" name="state">
+                            <option value="SD">SICKDAY</option>
+                            <option value="SD1">SICKDAY1</option>
+                          </select>
+                        </div>
+                        <div class="filter-item">
+                          <span>March 2023</span>
+                          <img src="assets/images/arrow-down.svg" alt="" class="filter-icon" loading="lazy" />
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="weekday-grid">
+                      <div class="weekday-container">
+                        <div class="weekday weekday-first">Mon</div>
+                        <div class="weekday">Tue</div>
+                        <div class="weekday">Wed</div>
+                        <div class="weekday">Thu</div>
+                        <div class="weekday weekday-highlight">Fri</div>
+                        <div class="weekday">Sat</div>
+                        <div class="weekday weekday-last">Sun</div>
+                      </div>
+                    </div>
+                    
+                    <div class="metrics-section">
+                      <div class="metric-card">
+                        <span>Sick Leave</span>
+                        <img src="assets/images/50percent.svg" alt="Sick leave statistics chart" class="metric-chart" loading="lazy" />
+                      </div>
+                      <div class="metric-card">
+                        <span>Annual Leave</span>
+                        <img src="assets/images/30percent.svg" alt="Annual leave statistics chart" class="metric-chart" loading="lazy" />
+                      </div>
+                      <div class="metric-card">
+                        <span>Annual Leave</span>
+                        <img src="assets/images/20percent.svg" alt="Annual leave statistics chart" class="metric-chart" loading="lazy" />
+                      </div>
+                    </div>
+                    
+                    <div class="footer-text">Most popular day: Friday</div>
+                  </div>
+                </section>
+
+                <section class="dashboard">
+                  <div class="heatmap-container">
+                    <div class="header-section">
+                      <h2 class="title">Heatmap</h2>
+                      <div class="filter-group">
+                        <div class="filter-item">
+                          <select class="single-select-2" name="state">
+                            <option value="SD">SICKDAY</option>
+                            <option value="SD1">SICKDAY1</option>
+                          </select>
+                        </div>
+                        <div class="filter-item">
+                          <span>March 2023</span>
+                          <img src="assets/images/arrow-down.svg" alt="" class="filter-icon" loading="lazy" />
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="weekday-grid">
+                      <div class="weekday-container">
+                        <div class="weekday weekday-first">Mon</div>
+                        <div class="weekday">Tue</div>
+                        <div class="weekday">Wed</div>
+                        <div class="weekday">Thu</div>
+                        <div class="weekday weekday-highlight">Fri</div>
+                        <div class="weekday">Sat</div>
+                        <div class="weekday weekday-last">Sun</div>
+                      </div>
+                    </div>
+                    
+                    <div class="metrics-section">
+                      <div class="metric-card">
+                        <span>Sick Leave</span>
+                        <img src="assets/images/50percent.svg" alt="Sick leave statistics chart" class="metric-chart" loading="lazy" />
+                      </div>
+                      <div class="metric-card">
+                        <span>Annual Leave</span>
+                        <img src="assets/images/30percent.svg" alt="Annual leave statistics chart" class="metric-chart" loading="lazy" />
+                      </div>
+                      <div class="metric-card">
+                        <span>Annual Leave</span>
+                        <img src="assets/images/20percent.svg" alt="Annual leave statistics chart" class="metric-chart" loading="lazy" />
+                      </div>
+                    </div>
+                    
+                    <div class="footer-text">Most popular day: Friday</div>
+                  </div>
+                </section>
+
+
+              </article>
+            </div>
+
+            <div class="content-header">
+              <h1 class="page-title">Leave Requests</h1>
+              <div class="view-toggle">
+                <button class="toggle-button active">List View</button>
+                <button class="toggle-button">Month View</button>
+              </div>
+            </div>
+        
+            <div class="leave-table">
+              <div class="table-actions">
+                <section class="table-tabs">
+                  <ul>
+                    <li class="active">All</li>
+                    <li>Approved</li>
+                    <li>Rejected</li>
+                  </ul>
+                </section>
+                <section class="table-calendar">
+                  <img src="assets/images/arrow-left.svg" alt="">
+                  <h5>March <b>2023</b></h5>
+                  <span id="datepicker-trigger">
+                    <input type="hidden" id="datepicker">
+                    <img src="assets/images/date-picker.svg" alt="" >
+                    <img src="assets/images/arrow-down.svg" alt="">
+                  </span>
+                  <img src="assets/images/arrow-right.svg" class="arrow-right" alt="">
+                </section>
+              </div>
+
+              <div class="table-header">
+                <div>
+                    <label class="checkbox-container">
+                      <p> # &nbsp;<img src="assets/images/sorter.svg" alt=""> </p>
+                     
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div>Name &nbsp; <img src="assets/images/sorter-white.svg" alt=""></div>
+                <div>Period &nbsp; <img src="assets/images/sorter-white.svg" alt=""></div>
+                <div>Day(s) &nbsp; <img src="assets/images/sorter-white.svg" alt=""></div>
+                <div>Leave Type &nbsp; <img src="assets/images/sorter-white.svg" alt=""></div>
+                <div>Actions</div>
+                <div></div>
+              </div>
+        
+              <div class="table-row">
+                <div>
+                  <label class="checkbox-container">
+                   <img src="assets/images/dot-yellow.svg" alt="Pending" class="status-icon" />
+
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="user-info">
+                  <img src="assets/images/mark.png" alt="" class="user-avatar-small" />
+                  <span>Mark Jacobs</span>
+                </div>
+                <div>31 Mar, 2023 09:00 AM<br />31 Mar, 2023 18:00 PM</div>
+                <div>1.0</div>
+                <div>Annual Leave</div>
+                <div class="action">
+                  <span class="action-buttons">
+                    <button class="btn btn-outline">Reject</button>
+                    <button class="btn btn-primary">Approve</button>
+                  </span>
+                  <img src="assets/images/caret-right.svg" alt="">
+                </div>
+              
+              </div>
+        
+              <div class="table-row">
+                <div>
+                  <label class="checkbox-container">
+                   <img src="assets/images/dot-yellow.svg" alt="Pending" class="status-icon" />
+                    <input type="checkbox" checked="checked" />
+                    <span class="checkmark"></span>
+                  </label>
+              </div>
+               <div class="user-info">
+                  <img src="assets/images/charlie.png" alt="" class="user-avatar-small" />
+                  <span>Charlie Kristen</span>
+                </div>
+                <div>10 Apr, 2023 09:00 AM<br />11 Apr, 2023 18:00 PM</div>
+                <div>2.0</div>
+                <div>Annual Leave</div>
+                <div class="action">
+                  <span class="action-buttons">
+                    <button class="btn btn-outline">Reject</button>
+                    <button class="btn btn-primary">Approve</button>
+                  </span>
+                  <img src="assets/images/caret-right.svg" alt="">
+                </div>
+              </div>
+        
+              <div class="table-row">
+                <div>
+                  <label class="checkbox-container">
+                   <img src="assets/images/dot-yellow.svg" alt="Pending" class="status-icon" />
+                    <input type="checkbox" checked="checked" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="user-info">
+                  <img  src="assets/images/nur.png" alt="" class="user-avatar-small" />
+                  <span>Nur Fariha binti Maslan</span>
+                </div>
+                <div>21 Apr, 2023 09:00 AM<br />24 Apr, 2023 18:00 PM</div>
+                <div>2.0</div>
+                <div>Hospital Leave</div>
+                <div class="action">
+                  <span class="action-buttons">
+                    <button class="btn btn-outline">Reject</button>
+                    <button class="btn btn-primary">Approve</button>
+                  </span>
+                  <img src="assets/images/caret-right.svg" alt="">
+                </div>
+              </div>
+
+              <div class="table-row">
+                <div>
+                  <label class="checkbox-container">
+                   <img src="assets/images/dot-green.svg" alt="Pending" class="status-icon" />
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="user-info">
+                  <img src="assets/images/nishant.png" alt="" class="user-avatar-small" />
+                  <span>Nishant Talwar</span>
+                </div>
+                <div>27 Feb, 2023 14:00 PM<br />28 Feb, 2023 18:00 PM</div>
+                <div>1.5</div>
+                <div>Sick Leave</div>
+                <div class="action">
+                  <span class="action-buttons">
+                    <button class="btn btn-primary">Approved</button>
+                  </span>
+                  <img src="assets/images/caret-right.svg" alt="">
+                </div>
+              </div>
+
+              <div class="table-row">
+                <div>
+                  <label class="checkbox-container">
+                   <img src="assets/images/dot-green.svg" alt="Pending" class="status-icon" />
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="user-info">
+                  <img src="assets/images/simon.png" alt="" class="user-avatar-small" />
+                  <span>Simon Minter</span>
+                </div>
+                <div>22 Feb, 2023 09:00 PM<br />22 Feb, 2023 13:00 PM</div>
+                <div>1.5</div>
+                <div>Sick Leave</div>
+                <div class="action">
+                  <span class="action-buttons">
+                    <button class="btn btn-primary">Approved</button>
+                  </span>
+                  <img src="assets/images/caret-right.svg" alt="">
+                </div>
+              </div>
+
+              <section class="table-footer">
+                <div>
+                  <button class="btn btn-dark" disabled>PREVIOUS</button>
+                </div>
+                <div>
+                  <h4>1-25 OF 227</h4>
+                </div>
+                <div>
+                  <button class="btn btn-dark">NEXT</button>
+                </div>
+              </section>
+
+            </div>
+        </section>
+    </main>
+  </section>
+  <footer class="page-footer">
+    <div class="footer-text">Total: 2</div>
+    <div class="footer-buttons">
+      <button class="btn btn-outline">REJECT</button>
+      <button class="btn btn-primary">APPROVE</button>
+    </div>
+  </footer>
+</body>
+</html>

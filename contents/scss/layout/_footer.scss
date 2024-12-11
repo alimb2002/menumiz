@@ -1,0 +1,26 @@
+.action-footer {
+  border-radius: 0 0 20px 20px;
+  background-color: var(--Gray-Dark, #272727);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.64);
+  z-index: 10;
+  display: flex;
+  margin-top: -62px;
+  width: 100%;
+  align-items: center;
+  padding: 16px;
+  font-family: Urbanist, sans-serif;
+  font-weight: 700;
+}
+
+.footer-content {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.total-count {
+  color: var(--White, #fff);
+  font-size: 16px;
+  letter-spacing: 0.78px;
+}

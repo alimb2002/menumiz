@@ -1,0 +1,165 @@
+.dashboards {
+  max-width: 1200px;
+  gap: 10px;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding-bottom: 2px;
+  &::-webkit-scrollbar {
+    height: 1px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: $gray-dark;
+    border-radius: 10px;
+  }
+  .dashboard {
+    min-width: 500px;
+  }
+}
+
+.dashboard-header {
+  display: flex;
+  margin: 28px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  .dashboard-title {
+    margin: 28px 0;
+    align-self: stretch;
+    font-size: 28px;
+    color: $white;
+    font-weight: 700;
+    line-height: 1;
+  }
+  .heatmap-container {
+    border-radius: 8px;
+    background-color: $gray-black;
+    display: flex;
+    max-width: 552px;
+    padding: 0 0 8px;
+    flex-direction: column;
+    border: 1px solid $gray-dark;
+  }
+
+  .header-section {
+    border-bottom: 1px solid $gray-dark;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px 16px 10px 24px;
+    gap: 40px 100px;
+  }
+
+  .title {
+    color: #fff;
+    margin: auto 0;
+  }
+
+  .filter-group {
+    display: flex;
+    min-width: 240px;
+    align-items: start;
+    align-items: center;
+    margin: auto 0;
+  }
+
+  .filter-item {
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 8px 16px;
+    color: $gray-main;
+    text-transform: uppercase;
+  }
+
+  .filter-icon {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+  }
+
+  .weekday-grid {
+    display: flex;
+    margin-top: 10px;
+    width: 100%;
+    flex-direction: column;
+    padding: 8px 16px;
+  }
+
+  .weekday-container {
+    border-radius: 8px;
+    background-color: $gray-main;
+    display: flex;
+    width: 100%;
+    gap: 1px;
+    overflow: hidden;
+    padding: 1px;
+  }
+
+  .weekday {
+    flex: 1;
+    background-color: $gray-black;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+  }
+
+  .weekday-first {
+    border-radius: 8px 0 0 8px;
+  }
+
+  .weekday-last {
+    border-radius: 0 8px 8px 0;
+  }
+
+  .weekday-highlight {
+    background: red;
+  }
+
+  .metrics-section {
+    display: flex;
+    margin-top: 10px;
+    min-height: 159px;
+    width: 100%;
+    align-items: end;
+    gap: 16px;
+    flex-wrap: wrap;
+    padding: 8px 24px;
+  }
+
+  .metric-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    text-align: center;
+    flex: 1;
+    flex-basis: 0%;
+  }
+
+  .metric-chart {
+    width: 108px;
+    height: 108px;
+    margin-top: 20px;
+    object-fit: contain;
+  }
+
+  .circle-progress {
+    border-radius: 50%;
+    height: 108px;
+    margin-top: 20px;
+  }
+
+  .footer-text {
+    border-top: 1px solid $gray-dark;
+    margin-top: 10px;
+    width: 100%;
+    color: $gray-main;
+    text-align: left;
+    padding: 16px 24px 8px;
+  }
+}

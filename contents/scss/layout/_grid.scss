@@ -1,0 +1,12 @@
+.dashboard-container {
+  border-radius: 20px;
+  background-color: $black-main;
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+
+.main-container {
+  flex: auto;
+  max-width: 100%;
+}

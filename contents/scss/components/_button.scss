@@ -1,0 +1,43 @@
+.btn {
+  border: none;
+  color: white;
+  padding: 10px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn.btn-outline {
+  border: 1px solid $gray-main;
+  color: $white;
+  &:hover {
+    background-color: $gray-dark;
+  }
+}
+
+.btn.btn-primary {
+  background-color: $purple-main;
+  color: $white;
+  &:hover {
+    background-color: $purple-dark;
+  }
+}
+
+.btn.btn-dark {
+  background-color: $gray-dark;
+  border-radius: 10px;
+  &:hover {
+    background-color: $gray-main;
+    border-color: $white;
+  }
+  &:disabled {
+    color: $gray-main;
+    cursor: auto;
+    &:hover {
+      background-color: $gray-dark;
+    }
+  }
+}
